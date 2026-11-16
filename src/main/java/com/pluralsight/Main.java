@@ -12,15 +12,26 @@ public class Main {
 
         Semitruck eightTeen = new Semitruck();
         eightTeen.setColor("Blue");
-        eightTeen.setFuelCapacity(7);
-        eightTeen.setNumberOfPassengers(8);
-        eightTeen.setCargoCapacity(11);
+        eightTeen.setFuelCapacity(20);
+        eightTeen.setNumberOfPassengers(2);
+        eightTeen.setCargoCapacity(50);
 
         Hovercraft drift = new Hovercraft();
         drift.setColor("Green");
-        drift.setFuelCapacity(7);
-        drift.setNumberOfPassengers(8);
-        drift.setCargoCapacity(11);
+        drift.setFuelCapacity(9);
+        drift.setNumberOfPassengers(12);
+        drift.setCargoCapacity(13);
+
+        Car drive = new Car();
+        drive.setColor("Blue");
+        drive.setFuelCapacity(6);
+        drive.setNumberOfPassengers(4);
+        drive.setCargoCapacity(17);
+
+        System.out.println("Moped: " + slowRide.getColor() + ", Fuel Capacity: " + slowRide.getFuelCapacity() + " gal");
+        System.out.println("Car: " + drive.getColor() + ", Passengers: " + drive.getNumberOfPassengers());
+        System.out.println("SemiTruck: " + eightTeen.getColor() + ", Cargo Capacity: " + eightTeen.getCargoCapacity() + " lbs");
+        System.out.println("Hovercraft: " + drift.getColor() + ", Passengers: " + drift.getNumberOfPassengers());
 
         }
     }
