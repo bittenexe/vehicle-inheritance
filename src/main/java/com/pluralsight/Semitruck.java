@@ -1,2 +1,4 @@
-public class Semitruck {
+package com.pluralsight;
+
+public class Semitruck extends Vehicle{
 }

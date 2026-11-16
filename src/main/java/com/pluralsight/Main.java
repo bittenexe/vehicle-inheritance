@@ -1,6 +1,4 @@
-import com.pluralsight.Moped;
-import com.pluralsight.Semitruck;
-import com.pluralsight.Vehicle;
+package com.pluralsight;
 
 public class Main {
 
@@ -13,17 +11,20 @@ public class Main {
         slowRide.setCargoCapacity(11);
 
         Semitruck eightTeen = new Semitruck();
-        eightTeen.setColor("Black");
+        eightTeen.setColor("Blue");
         eightTeen.setFuelCapacity(7);
         eightTeen.setNumberOfPassengers(8);
         eightTeen.setCargoCapacity(11);
 
         Hovercraft drift = new Hovercraft();
-        eightTeen.setColor("Black");
-        eightTeen.setFuelCapacity(7);
-        eightTeen.setNumberOfPassengers(8);
-        eightTeen.setCargoCapacity(11);
+        drift.setColor("Green");
+        drift.setFuelCapacity(7);
+        drift.setNumberOfPassengers(8);
+        drift.setCargoCapacity(11);
 
         }
-
     }
+
+    /* You are able to access the Vehicle getters and setters without creating an instance of Vehicle
+    *  because you are inheriting the fields of the Vehicle parent class.
+    */

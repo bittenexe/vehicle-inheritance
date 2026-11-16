@@ -1,2 +1,5 @@
-public class Hovercraft {
+package com.pluralsight;
+
+public class Hovercraft extends Vehicle{
+
 }
