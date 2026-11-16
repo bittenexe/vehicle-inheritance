@@ -4,31 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Moped slowRide = new Moped();
-        slowRide.setColor("Black");
-        slowRide.setFuelCapacity(7);
-        slowRide.setNumberOfPassengers(8);
-        slowRide.setCargoCapacity(11);
+        Moped slowRide = new Moped("Black", 1, 0, 5);
 
-        Semitruck eightTeen = new Semitruck();
-        eightTeen.setColor("Blue");
-        eightTeen.setFuelCapacity(20);
-        eightTeen.setNumberOfPassengers(2);
-        eightTeen.setCargoCapacity(50);
+        Semitruck eightTeen = new Semitruck("Blue", 2, 20, 50);
 
-        Hovercraft drift = new Hovercraft();
-        drift.setColor("Green");
-        drift.setFuelCapacity(9);
-        drift.setNumberOfPassengers(12);
-        drift.setCargoCapacity(13);
+        Hovercraft drift = new Hovercraft("Green", 9, 12, 13);
 
-        Car drive = new Car();
-        drive.setColor("Blue");
-        drive.setFuelCapacity(6);
-        drive.setNumberOfPassengers(4);
-        drive.setCargoCapacity(17);
+        Car drive = new Car("Pink", 6, 4, 17);
 
-        System.out.println("Moped: " + slowRide.getColor() + ", Fuel Capacity: " + slowRide.getFuelCapacity() + " gal");
+        System.out.println("Moped: " + slowRide.getColor() + ", Fuel Capacity: " + slowRide.getFuelCapacity() + " gallon");
         System.out.println("Car: " + drive.getColor() + ", Passengers: " + drive.getNumberOfPassengers());
         System.out.println("SemiTruck: " + eightTeen.getColor() + ", Cargo Capacity: " + eightTeen.getCargoCapacity() + " lbs");
         System.out.println("Hovercraft: " + drift.getColor() + ", Passengers: " + drift.getNumberOfPassengers());
